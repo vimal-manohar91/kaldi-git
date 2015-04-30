@@ -45,6 +45,7 @@ if which apt-get >&/dev/null; then
   if [ ! -z "$debian_packages" ]; then
     echo "$0: we recommend that you run (our best guess):"
     echo " sudo apt-get install $debian_packages"
+    echo " (to install libtool you may need libtool-bin)"
     printed=true
     status=1
   fi
